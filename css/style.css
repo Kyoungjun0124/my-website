@@ -3,6 +3,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 @import "reset.css";
 
+@font-face {
+  font-family: "RixInooAriDuriR";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2207-01@1.0/RixInooAriDuriR.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "LINESeedKR-Bd";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+/*-----------------------------------------------------*/
+
+.rix-font {
+  font-family: "RixInooariduriR";
+}
+
+/*-----------------------------------------------------*/
+
 body {
     background-color: rgb(200, 230, 255);
     display: flex;
@@ -29,6 +51,40 @@ body {
     font-family: 'Nanum Gothic', sans-serif;
     border-bottom: 1px dotted black;
 
+/*-----------------------------------------------------*/
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(30, 30, 30);
+  padding: 10px 0px;
+}
+.nav__logo {
+  display: flex;
+  align-items: center;
+  margin-left: 60px;
+}
+.nav__logo span {
+  font-size: 40px;
+  position: relative;
+  top: 5px;
+  margin-left: 10px;
+}
+.nav__logo img {
+  height: 80px;
+}
+nav:not(.nav__logo) {
+  font-family: "LINESeedKR-Bd";
+  font-size: 23px;
+}
+.nav__links {
+  display: flex;
+  position: relative;
+  top: 2px;
+}
+.nav__link {
+  margin-left: 150px;
 }
 .nav__btn {
     font-size: 25px;
