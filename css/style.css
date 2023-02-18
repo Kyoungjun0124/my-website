@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 @import "reset.css";
 
 @font-face {
@@ -26,30 +23,12 @@
 /*-----------------------------------------------------*/
 
 body {
-    background-color: rgb(200, 230, 255);
-    display: flex;
-    justify-content: center;
-    font-family: 'Black Han Sans', sans-serif;
+  color: white;
 }
-.header {
-    font-size: 60px;
-    color: white;
-    text-align: center;
-    line-height: 60px;
+a {
+  text-decoration: none;
+  color: white;
 }
-.nav__list{
-    display: flex;
-    justify-content: space-around;
-}
-.nav {
-    display: flex;
-    align-items: center;
-    width: 100vw;
-    padding: 40px 30px;
-    background-color: rgb(163, 206, 255);
-    display: block;
-    font-family: 'Nanum Gothic', sans-serif;
-    border-bottom: 1px dotted black;
 
 /*-----------------------------------------------------*/
 
@@ -85,19 +64,4 @@ nav:not(.nav__logo) {
 }
 .nav__link {
   margin-left: 150px;
-}
-.nav__btn {
-    font-size: 25px;
-}
-.nav__nomal-btn{
-    text-decoration: none;
-    color: black;
-}
-.nav__join-login-btn {
-    background-color: white;   
-    color: black;   
-    padding: 5px 10px;
-    font-size: 20;
-    text-decoration: none;
-    border-radius: 10px;   
 }
